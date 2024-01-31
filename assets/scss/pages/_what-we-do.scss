@@ -1,0 +1,199 @@
+// What we do Projects 
+
+.what-we-do-section{
+    background-color: $tertiary;
+}
+
+.what-we-do-wrapper{
+    & .content{
+        & .sub-title{
+            font-size: 4.75rem;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 104%; /* 4.94rem */
+            letter-spacing: -0.25rem;
+            color: $secondary;
+
+            @media #{$desktop-device}{
+                font-size: 4.75rem;
+            }
+            @media #{$small-mobile}{
+                font-size: 24px;
+            }
+        }
+        & .main-title{
+            font-size: 57px;
+            font-weight: 400;
+            margin-top: 20px;
+
+            @media #{$desktop-device}{
+                font-size: 48px;
+            }
+            @media #{$small-mobile}{
+                font-size: 30px;
+            }
+        }
+        & p{
+            margin: 48px 0 48px 0px;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 1.75rem */
+        }
+    }
+    & .content-list{
+        @media #{$extraBig-device, $laptop-device}{
+            padding-left: 70px;
+        }
+        @media #{$tablet-device, $large-mobile}{
+            padding-top: 40px;
+        }
+
+        & ul{
+            & li{
+                font-size: 22px;
+                font-weight: 500;
+                color: $heading-color;
+                position: relative;
+                padding-left: 40px;
+
+                @media #{$desktop-device}{
+                    font-size: 20px;
+                }
+                @media #{$small-mobile}{
+                    font-size: 16px;
+                    padding-left: 20px;
+                }
+
+                & + li{
+                    margin-top: 28px;
+                }
+
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 9px;
+                    height: 9px;
+                    background-color: $primary;
+                    border-radius: 50%;
+                    top: 18px;
+                    left: 0;
+
+                    @media #{$small-mobile}{
+                        width: 7px;
+                        height: 7px;
+                        top: 12px;
+                    }
+                }
+            }
+        }
+        & .btn{
+            margin-top: 40px;
+            margin-left: 40px;
+
+            @media #{$small-mobile}{
+                margin-left: 20px;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    & .content-bento{
+        display: flex;        
+        align-items: center;
+        align-content: center;
+        gap: 2rem var(--Spaces-Spaces-xx-large, 2rem);
+        align-self: stretch;
+        flex-wrap: wrap;
+
+        & .box-bento{
+            display: flex;
+            width: 23.1rem;
+            height: 27.5rem;
+            max-height: 27.5rem;
+            padding: 2rem 1.4rem 0rem 1.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+            border-radius: 2rem;
+            background: $white;
+
+            & h1{
+                font-family: $body-font;
+                font-size: 2.4375rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%; /* 2.925rem */
+                letter-spacing: -0.125rem;
+                color: $secondary;
+
+            }
+
+            & p{
+                font-family: $body-font;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%; /* 1.4rem */
+            }
+        }
+
+        & .box-bento.var1 {
+            flex-shrink: 0;
+            align-self: stretch;
+            background-image: url(../images/bento/what-we-do/01-web-development.png);
+            background-repeat: no-repeat;
+            background-position: center 265px;
+        }
+
+        & .box-bento.var2 {
+            flex-shrink: 0;
+            align-self: stretch;
+            background-image: url(../images/bento/what-we-do/02-mobile-development.png);
+            background-repeat: no-repeat;
+            background-position: center 300px;
+        }
+
+        & .box-bento.var3{
+            flex-shrink: 0;
+            align-self: stretch;
+            background-image: url(../images/bento/what-we-do/03-machine-learning.png);
+            background-repeat: no-repeat;
+            background-position: center 285px;
+        } 
+        
+        & .box-bento.var4 {
+            flex-shrink: 0;
+            align-self: stretch;
+            background-image: url(../images/bento/what-we-do/04-support-and-management.png);
+            background-repeat: no-repeat;
+            background-position: center 265px;
+        }
+        
+        & .box-bento.var5 {
+            flex-shrink: 0;
+            align-self: stretch;
+            background-image: url(../images/bento/what-we-do/05-product-design.png);
+            background-repeat: no-repeat;
+            background-position: center 265px;
+        }
+        
+        & .box-bento.var6 {
+            flex-shrink: 0;
+            align-self: stretch;
+            background-image: url(../images/bento/what-we-do/06-ideation-e-evaluation.png);
+            background-repeat: no-repeat;
+            background-position: center 265px;
+        }        
+
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+// Footer Section
+.footer-section {
+    background-color: $white;
+}
+
+// Back to Top
+.back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 50%;
+    z-index: 99;
+    text-align: center;
+    display: none;
+    box-shadow: 2px 4px 8px rgba($dark, 0.15);  
+    transition: all 0.3s linear;
+    color: $white;
+    background-color: $primary;
+
+    &:hover{
+        color: $white;
+        background-color: $dark;    
+    }
+}
